@@ -1,0 +1,44 @@
+header {
+  padding: 40px;
+}
+
+footer {
+  position: fixed;
+  color: black;
+  bottom: 0;
+  width: 100%;
+  padding: 40px;
+}
+
+.social-container {
+  /* padding: 25px 50px; */
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.github {
+    color: black;
+}
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
+}
