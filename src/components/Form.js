@@ -14,7 +14,7 @@ export default function Form() {
     const profitOrLoss = (currentPrice - initialPrice) * units;
     const profitOrLossPercentage =
       ((currentPrice - initialPrice) / initialPrice) * 100;
-    if (profitOrLoss > 0) {
+    if (profitOrLoss >= 0) {
       return setMessage(
         <div className="alert alert-success text-success" style={{fontSize:"larger"}}>
           <div>You made: {profitOrLoss} </div>
@@ -38,7 +38,7 @@ export default function Form() {
 
   return (
     <div className="col-md-3">
-      <div style={{ paddingTop: "20vh" }}>
+      <div style={{ paddingTop: "10vh" }}>
         <div className="form-group">
           <label>Initial Price of the Stock</label>
           <input
