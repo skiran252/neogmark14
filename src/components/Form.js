@@ -82,7 +82,7 @@ export default function Form() {
           CHECK PROFIT/LOSS
         </button>
 
-        <div className="text-center">{message}</div>
+        <div className="text-center" style={{marginBottom:"20vh"}}>{message}</div>
       </div>
     </div>
   );
