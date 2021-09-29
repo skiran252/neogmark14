@@ -19,8 +19,8 @@ export default function Form() {
         <div className="alert alert-success text-success" style={{fontSize:"larger"}}>
           <div>You made: {profitOrLoss} </div>
           <div>
-            Percentage:
-            {Math.abs(profitOrLossPercentage).toFixed(2)}%
+            Percentage:{" "}
+            { Math.abs(profitOrLossPercentage).toFixed(2)}%
           </div>
         </div>
       );
@@ -29,7 +29,7 @@ export default function Form() {
         <div className="alert alert-danger">
           <h3>
             You lose {Math.abs(profitOrLoss)} Percentage:{" "}
-            {Math.abs(profitOrLossPercentage).toFixed(2)}%
+            { Math.abs(profitOrLossPercentage).toFixed(2)}%
           </h3>
         </div>
       );
