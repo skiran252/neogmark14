@@ -20,7 +20,7 @@ export default function Form() {
           <div>You made: {profitOrLoss} </div>
           <div>
             Percentage:
-            {Math.abs(profitOrLossPercentage).toFixed(2)})%
+            {Math.abs(profitOrLossPercentage).toFixed(2)}%
           </div>
         </div>
       );
