@@ -12,15 +12,15 @@ export default function Form() {
     currentPrice = parseInt(currentPrice);
 
     const profitOrLoss = (currentPrice - initialPrice) * units;
-    const profitOrLossPercentage =
-      ((currentPrice - initialPrice) / initialPrice) * 100;
+    const profitOrLossPercentage = ((currentPrice - initialPrice) / initialPrice) * 100;
+    console.log(profitOrLossPercentage)
     if (profitOrLoss >= 0) {
       return setMessage(
         <div className="alert alert-success text-success" style={{fontSize:"larger"}}>
           <div>You made: {profitOrLoss} </div>
           <div>
             Percentage:
-            {Math.abs(profitOrLossPercentage).toFixed(2)}%
+            {Math.abs(profitOrLossPercentage).toFixed(2)})%
           </div>
         </div>
       );
@@ -29,7 +29,7 @@ export default function Form() {
         <div className="alert alert-danger">
           <h3>
             You lose {Math.abs(profitOrLoss)} Percentage:{" "}
-            {Math.abs(profitOrLossPercentage).toPrecision(2)}%
+            {Math.abs(profitOrLossPercentage).toFixed(2)}%
           </h3>
         </div>
       );
